@@ -30,6 +30,7 @@ a {
     max-width: 1168px;
     width: 1168px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .logo {
@@ -82,47 +83,6 @@ a {
     background-position: center;
 }
 
-/* -----------HEADER--------- */
-.header {
-    padding: 30px 0 29px 32px;
-}
-
-.header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__nav-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 31px;
-}
-
-.header__list {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-
-.header__item:first-child .header__link {
-    margin-right: 24px;
-    font-size: 13px;
-    line-height: 20px;
-}
-
-.header__link {
-    font-size: 15px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    transition: opacity 0.3s ease;
-}
-
-.header__link:hover {
-    opacity: 0.5;
-}
-
 .info {
     display: flex;
     gap: 16px;
@@ -159,6 +119,97 @@ a {
 .section-subtitle--desc {
     margin-bottom: 12px;
     text-align: left;
+}
+
+/* ----------BURGER----------- */
+.burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 26px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+.burger::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+.burger:hover {
+    opacity: 0.5;
+}
+
+.burger__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+}
+
+/* -----------HEADER--------- */
+.header {
+    padding: 30px 0 29px 32px;
+    overflow: hidden;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    transition: right 0.3s ease;
+}
+
+.header__item:first-child .header__link {
+    margin-right: 24px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.header__link {
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.header__link:hover {
+    opacity: 0.5;
+}
+
+.header__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* --------HERO---------- */

@@ -7,6 +7,8 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <script src="js/main.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -44,13 +46,18 @@
                                 </li>
                             </ul>
                         </nav>
-                        <button class="btn btn-get">Get template</button>
+                        <div class="header__btns">
+                            <div class="burger">
+                                <div class="burger__line"></div>
+                            </div>
+                            <button class="btn btn-get">Get template</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <main class="main">
+        <main class="main dn">
             <section class="hero">
                 <h2 class="hero__subtitle">Photographer & Filmmaker</h2>
                 <h1 class="title">Aperture Studios</h1>
@@ -466,7 +473,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer dn">
             <div class="container">
                 <div class="footer__wrapper footer__wrapper--border">
                     <div class="footer__logo">
@@ -599,7 +606,5 @@
                 </div>
             </div>
         </footer>
-
-        <script src="js/main.js"></script>
     </body>
 </html>
