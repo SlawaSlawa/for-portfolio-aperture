@@ -9,14 +9,63 @@
     }
 }
 
+@media (max-width: 900px) {
+    .section {
+        padding: 50px 10px;
+    }
+}
+
 @media (max-width: 800px) {
     .btn {
         padding: 8px 20px;
         font-size: 14px;
         line-height: 1;
     }
+    .more-btn {
+        padding-left: 30px;
+    }
+    .more-btn:before {
+        top: 50%;
+        left: 4px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+    }
+    .section-title {
+        font-size: 34px;
+        line-height: 1;
+    }
+    .section-subtitle {
+        margin-bottom: 30px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .section-subtitle--desc {
+        margin-bottom: 20px;
+    }
 }
 
+@media (max-width: 576px) {
+    .section {
+        padding: 30px 10px;
+    }
+    .section-title {
+        margin-bottom: 12px;
+        font-size: 28px;
+        line-height: 1;
+    }
+    .section-subtitle {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-subtitle {
+        margin-bottom: 12px;
+    }
+}
 /* ----------HEADER--------- */
 
 @media (max-width: 1400px) {
@@ -128,6 +177,51 @@
         margin-right: 0;
         justify-content: center;
         float: none;
+    }
+}
+
+/* ---------WHAT------------ */
+@media (max-width: 1400px) {
+    .gallery {
+        justify-content: space-between;
+        gap: calc(100vw - 98vw) 0;
+        padding: 0 30px;
+    }
+    .gallery__item {
+        width: 49%;
+        height: calc(100vw / 2);
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        gap: 10px 0;
+    }
+    .gallery__item {
+        width: 100%;
+    }
+    .gallery__description {
+        line-height: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .gallery__item {
+        padding: 14px;
+    }
+    .gallery__description {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery__item {
+        height: 100vw;
     }
 }
 /* 
