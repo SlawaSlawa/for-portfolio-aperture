@@ -7,11 +7,21 @@
         max-width: 100%;
         width: 100%;
     }
+    .section-img {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
 
 @media (max-width: 900px) {
     .section {
         padding: 50px 10px;
+    }
+    .section-img {
+        padding-top: 358px;
+    }
+    .description--sunset {
+        margin-bottom: 40px;
     }
 }
 
@@ -43,6 +53,9 @@
     .section-subtitle--desc {
         margin-bottom: 20px;
     }
+    .section-img {
+        padding-top: 347px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -58,6 +71,9 @@
         margin-bottom: 30px;
         font-size: 14px;
         line-height: 16px;
+    }
+    .section-img {
+        padding-top: 231px;
     }
 }
 
@@ -224,6 +240,8 @@
         height: 100vw;
     }
 }
+
+/* ----------SUNSET--------- */
 /* 
 576
 768
