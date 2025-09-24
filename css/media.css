@@ -297,6 +297,37 @@
     }
 }
 
+/* ---------CLIENTS---------- */
+@media (max-width: 1400px) {
+    .clients__list {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .clients__list {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 900px) {
+    .clients__item {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .clients__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .clients__item {
+        width: 50%;
+    }
+}
+
 /* 
 576
 768
@@ -304,4 +335,3 @@
 1200
 1400
 */
-/* description--monstera */
