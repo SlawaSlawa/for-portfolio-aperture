@@ -191,6 +191,7 @@
 
 @media (max-width: 480px) {
     .info {
+        width: 100%;
         margin-right: 0;
         justify-content: center;
         float: none;
@@ -325,6 +326,37 @@
     }
     .clients__item {
         width: 50%;
+    }
+}
+
+/* --------------FOOTER-------- */
+@media (max-width: 900px) {
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container--footer {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+        gap: calc(100vw - 98vw);
+    }
+}
+
+@media (max-width: 576px) {
+    .container--footer {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .footer__list-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
