@@ -361,6 +361,9 @@ a {
     padding: 45px 0;
     background-color: #3b3b3b;
     background-image: url(../images/tools-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* --------MONSTERA--------- */

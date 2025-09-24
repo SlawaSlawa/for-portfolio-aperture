@@ -241,7 +241,61 @@
     }
 }
 
-/* ----------SUNSET--------- */
+/* ----------TOOLS--------- */
+@media (max-width: 1400px) {
+    .tools__info,
+    .tools__img {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media (max-width: 900px) {
+    .tools {
+        padding: 50px 0;
+    }
+    /* .tools__info {
+        padding-bottom: 50px;
+    } */
+}
+
+@media (max-width: 800px) {
+    .tools__wrapper {
+        flex-wrap: wrap;
+    }
+    .tools__info,
+    .tools__img {
+        width: 100%;
+    }
+    .tools__info-wrapper {
+        max-width: 100%;
+    }
+    .tools__img {
+        height: calc(100vw / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .tools__info {
+        padding: 39px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tools__info {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tools__info {
+        min-height: 100vw;
+    }
+    .tools__img {
+        height: 100vw;
+    }
+}
+
 /* 
 576
 768
