@@ -45,7 +45,7 @@
     }
     .section-title {
         font-size: 34px;
-        line-height: 1;
+        line-height: 1.2;
     }
     .section-subtitle {
         margin-bottom: 30px;
@@ -67,7 +67,6 @@
     .section-title {
         margin-bottom: 12px;
         font-size: 28px;
-        line-height: 1;
     }
     .section-subtitle {
         margin-bottom: 30px;
