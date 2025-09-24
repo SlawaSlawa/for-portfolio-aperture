@@ -20,7 +20,8 @@
     .section-img {
         padding-top: 358px;
     }
-    .description--sunset {
+    .description--sunset,
+    .description--monstera {
         margin-bottom: 40px;
     }
 }
@@ -303,3 +304,4 @@
 1200
 1400
 */
+/* description--monstera */
