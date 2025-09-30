@@ -130,8 +130,56 @@ a {
     margin-left: auto;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    z-index: 120;
 }
 .burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+.burger::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+.burger:hover {
+    opacity: 0.5;
+}
+
+.burger__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+}
+
+.burger--active .burger__line {
+    display: none;
+}
+.burger--active.burger::before {
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+    transition: transform 0.3s ease;
+}
+.burger--active.burger::after {
+    transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
+    transition: transform 0.3s ease;
+}
+/* .burger::before {
     content: "";
     position: absolute;
     top: 0;
@@ -148,21 +196,7 @@ a {
     width: 100%;
     height: 2px;
     background-color: #ffffff;
-}
-.burger:hover {
-    opacity: 0.5;
-}
-
-.burger__line {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: translateY(-50%);
-    background-color: #ffffff;
-}
-
+} */
 /* -----------HEADER--------- */
 .header {
     padding: 30px 0 29px 32px;
