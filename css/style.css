@@ -534,6 +534,11 @@ a {
 .form {
     position: relative;
     max-width: 458px;
+    margin-top: -12px;
+}
+
+.form__input-wrapper {
+    position: relative;
 }
 
 .form__input {
@@ -541,17 +546,37 @@ a {
     border-radius: 12px;
     padding: 10px 90px 11px 20px;
     background-color: #ffffff;
-    border: none;
+    border: 2px solid transparent;
+    outline: none;
 }
 
 .form__btn {
     position: absolute;
-    top: 3px;
+    top: 5px;
     right: 5px;
     width: 63px;
     height: 30px;
     background-color: #000000;
     border-radius: 11px;
+}
+
+.form__input--error {
+    border: 2px solid red;
+}
+
+.form__error-message-wrapper {
+    position: relative;
+    min-height: 20px;
+    overflow: hidden;
+}
+
+.form__error-message {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    font-size: 12px;
+    color: red;
+    transition: top 0.3s ease;
 }
 
 .footer__copy {

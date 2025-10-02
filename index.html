@@ -567,8 +567,19 @@
                     </div>
 
                     <form class="form">
-                        <input type="text" class="form__input" />
-                        <button class="btn form__btn"></button>
+                        <div class="form__error-message-wrapper">
+                            <div class="form__error-message">
+                                Please enter more than 3 characters.
+                            </div>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <input
+                                type="text"
+                                class="form__input"
+                                id="form-input"
+                            />
+                            <button class="btn form__btn"></button>
+                        </div>
                     </form>
                 </div>
 
