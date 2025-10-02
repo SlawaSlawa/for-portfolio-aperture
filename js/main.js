@@ -46,6 +46,7 @@ if (formEl) {
         evt.preventDefault();
         if (sendFlag && formInputEl) {
             alert("Your message " + formInputEl.value.trim() + " has been sent");
+            formInputEl.value = "";
         }
     });
 }
